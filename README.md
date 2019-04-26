@@ -8,7 +8,7 @@ Link to their paper: http://groups.csail.mit.edu/sls/publications/2018/Alhanai_I
 The aim of this project is to completely implement the model proposed in the research paper, and look for possible modifications that would optimize the model further.
 The following modifications have been made to the architecture of the proposed model in the paper:
   - Initially, we have implemented Bidirectional LSTMs on only textual data of the DIAC-WOZ database, due to the lack of efficient hardware to process the audio data.
-  - Instead of using 2 stacks of BiLSTMs, we have introduced 3 stacks.
+  - Instead of using 2 layers of BiLSTMs, we have introduced 3 layers.
   - Processing of the input textual data has been considered using the original Doc2Vec segment level analysis approach.
   - We are now considering using an embedding layer instead of the Doc2Vec function.
   - Due to the absence of the audio processing mode, our architecture is currently simple and not multimodal as proposed in the research paper.

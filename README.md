@@ -10,7 +10,7 @@ The following modifications have been made to the architecture of the proposed m
   - Initially, we have implemented Bidirectional LSTMs on only textual data of the DIAC-WOZ database, due to the lack of efficient hardware to process the audio data.
   - Instead of using 2 layers of BiLSTMs, we have introduced 3 layers.
   - Processing of the input textual data has been considered using the original Doc2Vec segment level analysis approach.
-  - We are now considering using an embedding layer instead of the Doc2Vec function.
+  - We have also used an embedding layer instead of the Doc2Vec function.
   - Due to the absence of the audio processing mode, our architecture is currently simple and not multimodal as proposed in the research paper.
   - We have experimented with several changes in the hyperparameters used in the model- the learning rate (0.01 - 0.1), the optimizer technique (SGD, Adam), number of epochs (50-300), the type of loss (binary vs. categorical cross entropy), the activation function for the Dense layer (sigmoid vs. softmax vs. ReLU) and so on.
 
